@@ -13,4 +13,6 @@ for i = 1:1024
     end
 end
 
-sound_matrix;
+sound_vector = sound_matrix(:);
+inverse_transform = ifft(sound_vector, 'symmetric');
+sound(inverse_transform, 1800);
