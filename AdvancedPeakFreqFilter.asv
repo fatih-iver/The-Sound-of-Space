@@ -1,0 +1,10 @@
+% read the sound file
+[y,Fs] = audioread("PinkPanther30.wav");
+% play the sound file
+sound(y, Fs);
+
+l1 = lowpass(y, 1000, Fs)
+l2 = lowpass(y, 1000, Fs)
+l3 = lowpass(y, 1000, Fs)
+l4 = lowpass(y, 1000, Fs)
+
