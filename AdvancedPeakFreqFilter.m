@@ -1,6 +1,7 @@
 % read the sound file
 [y,Fs] = audioread("PinkPanther30.wav");
 
+
 % get number of peaks after applying lowpass filter
 n1 = numel(findpeaks(lowpass(y,1000,Fs)));
 n2 = numel(findpeaks(lowpass(y,2000,Fs)));
